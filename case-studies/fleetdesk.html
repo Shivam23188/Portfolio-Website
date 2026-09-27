@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FleetDesk — Case study · Shivam Pandey</title>
+  <meta name="description" content="Case study: redesigning a logistics startup's operations dashboard during a product design internship." />
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span class="cursor-ring__label">Next</span></div>
+  <div class="page-wipe" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="logo" aria-label="Shivam Pandey — home">
+        <span class="logo__mark">sp</span><span>Shivam Pandey</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+        <a href="../index.html#contact" class="btn btn--dark btn--sm" data-magnetic>Let's talk</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a class="mobile-menu__link" href="../index.html#work">Work</a></li>
+      <li><a class="mobile-menu__link" href="../index.html#about">About</a></li>
+      <li><a class="mobile-menu__link" href="../index.html#process">Process</a></li>
+      <li><a class="mobile-menu__link" href="../index.html#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu__foot"><span>Open to full-time roles</span></div>
+  </div>
+
+  <main id="content">
+    <section class="cs-hero container">
+      <a href="../index.html#work" class="back reveal">← All work</a>
+      <span class="eyebrow reveal">Case study 02 · Internship</span>
+      <h1 class="cs-title">
+        <span class="line-mask"><span>FleetDesk: five tabs</span></span>
+        <span class="line-mask"><span style="--d:.1s">into <em>one glance.</em></span></span>
+      </h1>
+      <p class="cs-sub reveal" style="--d:.2s">
+        Redesigning the internal operations dashboard of an early-stage logistics startup, so
+        dispatchers catch delayed deliveries before customers call about them.
+      </p>
+      <!-- EDIT: update these details (company name can stay anonymous if under NDA) -->
+      <dl class="cs-meta reveal" style="--d:.3s">
+        <div><dt>Role</dt><dd>Product design intern</dd></div>
+        <div><dt>Team</dt><dd>1 PM, 3 engineers, me</dd></div>
+        <div><dt>Tools</dt><dd>Figma, FigJam, Notion</dd></div>
+        <div><dt>Platform</dt><dd>Web (desktop-first)</dd></div>
+      </dl>
+    </section>
+
+    <div class="container">
+      <div class="cs-cover" style="--tone:#dfe2f0">
+        <div class="mock">
+          <span class="mock__glow"></span>
+          <div class="dash">
+            <div class="dash__side"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="dash__main">
+              <div class="ui-line ui-line--dark" style="width:35%"></div>
+              <div class="dash__kpis">
+                <div class="dash__kpi"><i class="ui-line ui-line--short"></i><i class="ui-line ui-line--dark"></i></div>
+                <div class="dash__kpi"><i class="ui-line ui-line--short"></i><i class="ui-line ui-line--dark"></i></div>
+                <div class="dash__kpi"><i class="ui-line ui-line--short"></i><i class="ui-line ui-line--dark"></i></div>
+              </div>
+              <div class="dash__chart">
+                <svg viewBox="0 0 300 100" preserveAspectRatio="none" fill="none">
+                  <path d="M0 80 L300 80" stroke="#eceef5" /><path d="M0 50 L300 50" stroke="#eceef5" />
+                  <path class="line" d="M0 78 C30 70 45 72 70 60 S110 30 140 42 S190 64 215 38 S265 12 300 16" stroke="#4b5fd6" stroke-width="2.5" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-layout">
+        <aside class="toc" aria-label="On this page">
+          <p>On this page</p>
+          <a href="#overview">Overview</a>
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#design">Design</a>
+          <a href="#system">Design system</a>
+          <a href="#outcome">Outcome</a>
+          <a href="#learnings">Learnings</a>
+        </aside>
+
+        <div class="cs-body">
+          <section class="cs-section" id="overview">
+            <span class="eyebrow reveal">Overview</span>
+            <h2 class="reveal">The short version</h2>
+            <p class="reveal">The ops team managed hundreds of daily deliveries through a dashboard built quickly by engineers in the company's first months. It worked — but finding a problem meant switching between five tabs and a spreadsheet. I led the redesign of the core <strong>live deliveries view</strong> and built the first version of the component library.</p>
+            <div class="grid-3">
+              <div class="card reveal"><span class="card__k">Problem</span><h4>Scattered information</h4><p>Status, driver and customer data lived in different tabs.</p></div>
+              <div class="card reveal" style="--d:.08s"><span class="card__k">Solution</span><h4>Exception-first view</h4><p>Show what needs attention first; everything else on demand.</p></div>
+              <div class="card reveal" style="--d:.16s"><span class="card__k">Result</span><h4>Shipped to production</h4><p>Used daily by the ops team after launch.</p></div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="problem">
+            <span class="eyebrow reveal">The problem</span>
+            <h2 class="reveal">Delays were found by customers, not the team</h2>
+            <p class="reveal">Dispatchers only learned a delivery was late when a customer called. The data to catch it existed — it was just buried.</p>
+            <div class="callout reveal">"How might we help dispatchers spot and act on at-risk deliveries before the customer notices?"</div>
+          </section>
+
+          <section class="cs-section" id="research">
+            <span class="eyebrow reveal">Research</span>
+            <h2 class="reveal">Sitting next to the ops team</h2>
+            <p class="reveal">I shadowed dispatchers during two peak shifts, interviewed four of them, and ran a quick card sort to see how they grouped information.</p>
+            <ul class="bullets reveal">
+              <li>Dispatchers kept a <strong>paper list</strong> of "problem orders" because the tool had no way to flag them.</li>
+              <li>90% of the time they only cared about <strong>late, unassigned or failed</strong> deliveries.</li>
+              <li>Calling the driver was the most common action — and took four clicks to find the number.</li>
+            </ul>
+            <figure class="figure reveal" style="--tone:#e6e8f3">
+              <span class="figure__placeholder">Add: journey map / affinity board screenshot</span>
+              <figcaption>Affinity mapping from shadowing notes</figcaption>
+            </figure>
+          </section>
+
+          <section class="cs-section" id="design">
+            <span class="eyebrow reveal">Design</span>
+            <h2 class="reveal">Exceptions first, details on demand</h2>
+            <ul class="bullets reveal">
+              <li><strong>Attention queue:</strong> a pinned list at the top showing late, unassigned and failed deliveries, sorted by urgency.</li>
+              <li><strong>Side panel instead of new tabs:</strong> clicking a delivery opens driver, customer and timeline in one panel — with "Call driver" one click away.</li>
+              <li><strong>Status colour system:</strong> five states, colour <em>plus</em> icon and label, so it works for colour-blind users too.</li>
+              <li><strong>Saved filters:</strong> each dispatcher can pin views for their own zone.</li>
+            </ul>
+            <div class="flow reveal"><span>See alert</span><i>→</i><span>Open side panel</span><i>→</i><span>Call / reassign</span><i>→</i><span>Resolved</span></div>
+            <figure class="figure reveal" style="--tone:#e6e8f3">
+              <span class="figure__placeholder">Add: before / after dashboard screens</span>
+              <figcaption>Before and after — live deliveries view</figcaption>
+            </figure>
+          </section>
+
+          <section class="cs-section" id="system">
+            <span class="eyebrow reveal">Design system</span>
+            <h2 class="reveal">Building the foundations</h2>
+            <p class="reveal">There was no design system, so every screen looked slightly different. Using my engineering background, I set up tokens and components that mapped one-to-one to the team's React code.</p>
+            <div class="grid-2">
+              <div class="card reveal"><span class="card__k">Tokens</span><h4>Colour, type, spacing</h4><p>Named the same in Figma and in code, so handoff needed no translation.</p></div>
+              <div class="card reveal" style="--d:.08s"><span class="card__k">Components</span><h4>40+ documented</h4><p>Tables, badges, panels and form fields — each with states and usage notes.</p></div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="outcome">
+            <span class="eyebrow reveal">Outcome</span>
+            <h2 class="reveal">What changed</h2>
+            <!-- EDIT: replace with your real results -->
+            <div class="grid-3">
+              <div class="card reveal"><div class="metric" data-count="1">0</div><p>screen replaced five tabs for daily monitoring</p></div>
+              <div class="card reveal" style="--d:.08s"><div class="metric" data-count="40" data-suffix="+">0</div><p>reusable components shipped to the codebase</p></div>
+              <div class="card reveal" style="--d:.16s"><div class="metric" data-count="1" data-suffix=" click">0</div><p>to call a driver, down from four</p></div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="learnings">
+            <span class="eyebrow reveal">Learnings</span>
+            <h2 class="reveal">What the internship taught me</h2>
+            <ul class="bullets reveal">
+              <li>Watching people work beats asking what they want — the paper list told me more than any interview.</li>
+              <li>In a startup, a good-enough system shipped this sprint beats a perfect one next quarter.</li>
+              <li>Speaking the engineers' language earned me a seat in technical discussions early on.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <a href="aarogya.html" class="next-project container" data-cursor="Next">
+      <span class="eyebrow">Next case study</span>
+      <h2>Aarogya Clinic →</h2>
+    </a>
+  </main>
+
+  <footer class="contact" id="contact" style="padding-top:clamp(56px,7vw,90px)">
+    <div class="container">
+      <div class="contact__row">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <a class="mail" href="mailto:shivampandey.ux@gmail.com">shivampandey.ux@gmail.com</a>
+          <button class="copy-btn" data-copy="shivampandey.ux@gmail.com">Copy</button>
+        </div>
+        <a href="../index.html" class="btn btn--light" data-magnetic>Back home <span class="arrow">→</span></a>
+      </div>
+      <div class="footer">
+        <span>© <span data-year>2026</span> Shivam Pandey</span>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance</a>
+          <a href="https://dribbble.com/" target="_blank" rel="noopener">Dribbble</a>
+        </div>
+        <div class="footer__right"><a href="#content" class="to-top">Back to top
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 11V1M1.5 5.5 6 1l4.5 4.5"/></svg></a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

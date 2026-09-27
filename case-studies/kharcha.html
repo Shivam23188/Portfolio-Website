@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kharcha — Case study · Shivam Pandey</title>
+  <meta name="description" content="Case study: designing a five-second expense tracker for college students." />
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span class="cursor-ring__label">Next</span></div>
+  <div class="page-wipe" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="logo" aria-label="Shivam Pandey — home">
+        <span class="logo__mark">sp</span><span>Shivam Pandey</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+        <a href="../index.html#contact" class="btn btn--dark btn--sm" data-magnetic>Let's talk</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a class="mobile-menu__link" href="../index.html#work">Work</a></li>
+      <li><a class="mobile-menu__link" href="../index.html#about">About</a></li>
+      <li><a class="mobile-menu__link" href="../index.html#process">Process</a></li>
+      <li><a class="mobile-menu__link" href="../index.html#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu__foot"><span>Open to full-time roles</span></div>
+  </div>
+
+  <main id="content">
+    <section class="cs-hero container">
+      <a href="../index.html#work" class="back reveal">← All work</a>
+      <span class="eyebrow reveal">Case study 01 · Personal project</span>
+      <h1 class="cs-title">
+        <span class="line-mask"><span>Kharcha: budgeting</span></span>
+        <span class="line-mask"><span style="--d:.1s">in <em>five seconds.</em></span></span>
+      </h1>
+      <p class="cs-sub reveal" style="--d:.2s">
+        Designing a mobile expense tracker for college students who have tried budgeting apps —
+        and quit all of them within a week.
+      </p>
+      <!-- EDIT: update these details -->
+      <dl class="cs-meta reveal" style="--d:.3s">
+        <div><dt>Role</dt><dd>Solo product designer</dd></div>
+        <div><dt>Timeline</dt><dd>6 weeks</dd></div>
+        <div><dt>Tools</dt><dd>Figma, FigJam, Maze</dd></div>
+        <div><dt>Platform</dt><dd>Android & iOS</dd></div>
+      </dl>
+    </section>
+
+    <div class="container">
+      <div class="cs-cover" style="--tone:#dce7de">
+        <div class="mock">
+          <span class="mock__glow"></span>
+          <div class="phone phone--back">
+            <div class="ui-line ui-line--dark ui-line--mid"></div>
+            <div class="ui-row"><span class="ui-dot"></span><span class="ui-stack"><i class="ui-line"></i><i class="ui-line ui-line--short"></i></span></div>
+            <div class="ui-row"><span class="ui-dot"></span><span class="ui-stack"><i class="ui-line"></i><i class="ui-line ui-line--short"></i></span></div>
+            <div class="ui-row"><span class="ui-dot"></span><span class="ui-stack"><i class="ui-line"></i><i class="ui-line ui-line--short"></i></span></div>
+          </div>
+          <div class="phone phone--front">
+            <div class="ui-line ui-line--dark ui-line--short"></div>
+            <div class="ui-card ui-balance"><i class="ui-line ui-line--short"></i><i class="ui-line ui-line--big"></i></div>
+            <div class="ui-bars"><i style="--h:40%;--n:0"></i><i style="--h:65%;--n:1"></i><i style="--h:50%;--n:2"></i><i style="--h:90%;--n:3"></i><i style="--h:35%;--n:4"></i><i style="--h:60%;--n:5"></i></div>
+            <div class="ui-row"><span class="ui-dot"></span><span class="ui-stack"><i class="ui-line"></i><i class="ui-line ui-line--short"></i></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-layout">
+        <aside class="toc" aria-label="On this page">
+          <p>On this page</p>
+          <a href="#overview">Overview</a>
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#design">Design</a>
+          <a href="#testing">Testing</a>
+          <a href="#outcome">Outcome</a>
+          <a href="#learnings">Learnings</a>
+        </aside>
+
+        <div class="cs-body">
+          <section class="cs-section" id="overview">
+            <span class="eyebrow reveal">Overview</span>
+            <h2 class="reveal">The short version</h2>
+            <p class="reveal">Most budgeting apps are built for salaried adults with bank-linked accounts. Students pay in cash and UPI, split bills constantly, and get pocket money in irregular chunks. <strong>Kharcha</strong> is designed around those habits: log an expense in one tap, split it in two, and see what's left for the week — not the month.</p>
+            <div class="grid-3">
+              <div class="card reveal"><span class="card__k">Problem</span><h4>Logging is a chore</h4><p>Users quit because adding an expense took 6+ taps.</p></div>
+              <div class="card reveal" style="--d:.08s"><span class="card__k">Solution</span><h4>One-tap logging</h4><p>Smart presets for the places students spend most.</p></div>
+              <div class="card reveal" style="--d:.16s"><span class="card__k">Result</span><h4>Under 5 seconds</h4><p>Average time to log dropped in the final prototype.</p></div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="problem">
+            <span class="eyebrow reveal">The problem</span>
+            <h2 class="reveal">Money disappears in small amounts</h2>
+            <p class="reveal">Chai, auto rides, photocopies, late-night food orders. Individually tiny, together they're the reason students are broke by the 20th. Existing apps treat each of these as a form to fill — so people simply stop logging.</p>
+            <div class="callout reveal">"How might we make tracking small, frequent expenses feel effortless enough that students keep doing it?"</div>
+          </section>
+
+          <section class="cs-section" id="research">
+            <span class="eyebrow reveal">Research</span>
+            <h2 class="reveal">Listening before sketching</h2>
+            <p class="reveal">I interviewed 12 students across three colleges, ran a short survey, and reviewed four popular finance apps to see where people dropped off.</p>
+            <ul class="bullets reveal">
+              <li><strong>8 of 12</strong> had tried a budgeting app and abandoned it within two weeks.</li>
+              <li>Monthly budgets felt meaningless — pocket money and freelance income arrive irregularly.</li>
+              <li>Splitting with friends was the #1 source of "lost" money.</li>
+              <li>People remembered <em>where</em> they spent more easily than <em>how much</em>.</li>
+            </ul>
+            <h3 class="reveal">Who I designed for</h3>
+            <div class="grid-2">
+              <div class="card reveal"><span class="card__k">Persona</span><h4>Riya, 20 — hostel student</h4><p>Gets money from home every few weeks. Spends mostly via UPI, splits food orders almost daily, wants to stop asking parents for "extra".</p></div>
+              <div class="card reveal" style="--d:.08s"><span class="card__k">Key insight</span><h4>Weeks, not months</h4><p>Students think in "how much can I spend until Sunday", so the core number should be a weekly allowance.</p></div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="design">
+            <span class="eyebrow reveal">Design</span>
+            <h2 class="reveal">From six taps to one</h2>
+            <p class="reveal">I mapped the old logging flow and stripped out every step that didn't earn its place.</p>
+            <div class="flow reveal"><span>Open app</span><i>→</i><span>Tap a preset</span><i>→</i><span>Adjust amount (optional)</span><i>→</i><span>Done</span></div>
+            <h3 class="reveal">Key decisions</h3>
+            <ul class="bullets reveal">
+              <li><strong>Learned presets:</strong> the home screen shows your five most frequent spends ("Canteen ₹40", "Auto ₹60") — one tap logs them.</li>
+              <li><strong>Weekly allowance ring:</strong> a single, glanceable number of what's left until Sunday.</li>
+              <li><strong>Split in two taps:</strong> pick friends, Kharcha remembers who owes what.</li>
+              <li><strong>No mandatory categories:</strong> the place is the category, which matched how people recall spending.</li>
+            </ul>
+            <figure class="figure reveal" style="--tone:#e6eee8">
+              <span class="figure__placeholder">Add screens: assets/img/kharcha-screens.png</span>
+              <figcaption>Home, quick-log and split screens</figcaption>
+            </figure>
+          </section>
+
+          <section class="cs-section" id="testing">
+            <span class="eyebrow reveal">Testing</span>
+            <h2 class="reveal">Three rounds, three fixes</h2>
+            <p class="reveal">I tested clickable prototypes with 5 students per round, measuring time-to-log and noting every hesitation.</p>
+            <div class="grid-3">
+              <div class="card reveal"><span class="card__k">Round 1</span><h4>Icons confused people</h4><p>Swapped abstract icons for text labels on presets.</p></div>
+              <div class="card reveal" style="--d:.08s"><span class="card__k">Round 2</span><h4>Undo was hidden</h4><p>Added a 5-second undo toast after each one-tap log.</p></div>
+              <div class="card reveal" style="--d:.16s"><span class="card__k">Round 3</span><h4>Splits felt heavy</h4><p>Recent friends now appear first, cutting a full step.</p></div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="outcome">
+            <span class="eyebrow reveal">Outcome</span>
+            <h2 class="reveal">What changed</h2>
+            <!-- EDIT: replace with your real results -->
+            <div class="grid-3">
+              <div class="card reveal"><div class="metric" data-count="4.2" data-suffix="s">0</div><p>average time to log an expense (from ~19s)</p></div>
+              <div class="card reveal" style="--d:.08s"><div class="metric" data-count="14" data-suffix="/15">0</div><p>testers completed a split without help</p></div>
+              <div class="card reveal" style="--d:.16s"><div class="metric" data-count="9" data-suffix="/12">0</div><p>interviewees said they'd use it daily</p></div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="learnings">
+            <span class="eyebrow reveal">Learnings</span>
+            <h2 class="reveal">What I'd do next</h2>
+            <ul class="bullets reveal">
+              <li>Speed beats features. Every screen I removed made the product better.</li>
+              <li>Test with real numbers — placeholder amounts hid layout issues with ₹10,000+ values.</li>
+              <li>Next: explore UPI SMS parsing to log payments automatically, with clear privacy controls.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <a href="fleetdesk.html" class="next-project container" data-cursor="Next">
+      <span class="eyebrow">Next case study</span>
+      <h2>FleetDesk →</h2>
+    </a>
+  </main>
+
+  <footer class="contact" id="contact" style="padding-top:clamp(56px,7vw,90px)">
+    <div class="container">
+      <div class="contact__row">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <a class="mail" href="mailto:shivampandey.ux@gmail.com">shivampandey.ux@gmail.com</a>
+          <button class="copy-btn" data-copy="shivampandey.ux@gmail.com">Copy</button>
+        </div>
+        <a href="../index.html" class="btn btn--light" data-magnetic>Back home <span class="arrow">→</span></a>
+      </div>
+      <div class="footer">
+        <span>© <span data-year>2026</span> Shivam Pandey</span>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance</a>
+          <a href="https://dribbble.com/" target="_blank" rel="noopener">Dribbble</a>
+        </div>
+        <div class="footer__right"><a href="#content" class="to-top">Back to top
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 11V1M1.5 5.5 6 1l4.5 4.5"/></svg></a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

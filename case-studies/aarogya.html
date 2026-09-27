@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aarogya Clinic — Case study · Shivam Pandey</title>
+  <meta name="description" content="Case study: a mobile-first booking website for a neighbourhood clinic, designed as a freelance project." />
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span class="cursor-ring__label">Next</span></div>
+  <div class="page-wipe" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="logo" aria-label="Shivam Pandey — home">
+        <span class="logo__mark">sp</span><span>Shivam Pandey</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+        <a href="../index.html#contact" class="btn btn--dark btn--sm" data-magnetic>Let's talk</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a class="mobile-menu__link" href="../index.html#work">Work</a></li>
+      <li><a class="mobile-menu__link" href="../index.html#about">About</a></li>
+      <li><a class="mobile-menu__link" href="../index.html#process">Process</a></li>
+      <li><a class="mobile-menu__link" href="../index.html#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu__foot"><span>Open to full-time roles</span></div>
+  </div>
+
+  <main id="content">
+    <section class="cs-hero container">
+      <a href="../index.html#work" class="back reveal">← All work</a>
+      <span class="eyebrow reveal">Case study 03 · Freelance</span>
+      <h1 class="cs-title">
+        <span class="line-mask"><span>Aarogya Clinic: booking</span></span>
+        <span class="line-mask"><span style="--d:.1s">without the <em>phone call.</em></span></span>
+      </h1>
+      <p class="cs-sub reveal" style="--d:.2s">
+        A mobile-first website and appointment flow for a neighbourhood clinic — designed for
+        patients of every age and every level of smartphone comfort.
+      </p>
+      <!-- EDIT: update these details -->
+      <dl class="cs-meta reveal" style="--d:.3s">
+        <div><dt>Role</dt><dd>Freelance designer</dd></div>
+        <div><dt>Timeline</dt><dd>4 weeks</dd></div>
+        <div><dt>Tools</dt><dd>Figma, Framer</dd></div>
+        <div><dt>Platform</dt><dd>Responsive website</dd></div>
+      </dl>
+    </section>
+
+    <div class="container">
+      <div class="cs-cover" style="--tone:#efe2d0">
+        <div class="mock">
+          <span class="mock__glow"></span>
+          <div class="web">
+            <div class="web__bar"><i></i><i></i><i></i></div>
+            <div class="web__body">
+              <div class="web__copy"><span class="h"></span><span class="h"></span><span class="ui-line"></span><span class="ui-line ui-line--mid"></span><span class="web__btn"></span></div>
+              <div class="web__slots">
+                <i style="--n:0"></i><i style="--n:1"></i><i style="--n:2" class="on"></i>
+                <i style="--n:3"></i><i style="--n:4"></i><i style="--n:5"></i>
+                <i style="--n:6"></i><i style="--n:7"></i><i style="--n:8"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-layout">
+        <aside class="toc" aria-label="On this page">
+          <p>On this page</p>
+          <a href="#overview">Overview</a>
+          <a href="#problem">Problem</a>
+          <a href="#research">Research</a>
+          <a href="#design">Design</a>
+          <a href="#accessibility">Accessibility</a>
+          <a href="#outcome">Outcome</a>
+          <a href="#learnings">Learnings</a>
+        </aside>
+
+        <div class="cs-body">
+          <section class="cs-section" id="overview">
+            <span class="eyebrow reveal">Overview</span>
+            <h2 class="reveal">The short version</h2>
+            <p class="reveal">The clinic had no website — just a phone number that was always busy between 9 and 11 am. The doctor asked for "a simple site". What patients actually needed was a <strong>way to book without calling</strong>, in a language they were comfortable with.</p>
+            <div class="grid-3">
+              <div class="card reveal"><span class="card__k">Problem</span><h4>Jammed phone lines</h4><p>Patients gave up and went to other clinics.</p></div>
+              <div class="card reveal" style="--d:.08s"><span class="card__k">Solution</span><h4>3-step booking</h4><p>Doctor, time slot, name & number. That's it.</p></div>
+              <div class="card reveal" style="--d:.16s"><span class="card__k">Result</span><h4>Live & in use</h4><p>Receptionist now manages bookings from a simple list.</p></div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="problem">
+            <span class="eyebrow reveal">The problem</span>
+            <h2 class="reveal">A website wasn't the real brief</h2>
+            <p class="reveal">After a day at the reception desk, it was clear the brief was not "make us look professional online" but "stop losing patients to a busy phone line". That reframing shaped every decision after.</p>
+            <div class="callout reveal">"How might we let patients book an appointment in under a minute, without needing help?"</div>
+          </section>
+
+          <section class="cs-section" id="research">
+            <span class="eyebrow reveal">Research</span>
+            <h2 class="reveal">Who's actually booking?</h2>
+            <ul class="bullets reveal">
+              <li>Many bookings were made by <strong>adult children for their parents</strong> — often from another city.</li>
+              <li>Older patients preferred <strong>Hindi</strong> and larger text.</li>
+              <li>Nobody wanted to create an account just to see a doctor.</li>
+              <li>The receptionist needed something simpler than any off-the-shelf booking software.</li>
+            </ul>
+          </section>
+
+          <section class="cs-section" id="design">
+            <span class="eyebrow reveal">Design</span>
+            <h2 class="reveal">Three steps, no account</h2>
+            <div class="flow reveal"><span>Choose doctor</span><i>→</i><span>Pick a slot</span><i>→</i><span>Name & phone</span><i>→</i><span>WhatsApp confirmation</span></div>
+            <ul class="bullets reveal">
+              <li><strong>Big, tappable time slots</strong> grouped by morning / evening instead of a calendar picker.</li>
+              <li><strong>Hindi / English toggle</strong> at the top of every page, remembered on return.</li>
+              <li><strong>Booking for someone else</strong> as a first-class option, not an afterthought.</li>
+              <li><strong>Confirmation on WhatsApp</strong>, where patients already are — no email needed.</li>
+            </ul>
+            <figure class="figure reveal" style="--tone:#f3e9dc">
+              <span class="figure__placeholder">Add: booking flow screens</span>
+              <figcaption>Mobile booking flow</figcaption>
+            </figure>
+          </section>
+
+          <section class="cs-section" id="accessibility">
+            <span class="eyebrow reveal">Accessibility</span>
+            <h2 class="reveal">Designed for the least confident user</h2>
+            <div class="grid-2">
+              <div class="card reveal"><span class="card__k">Readability</span><h4>18px base text</h4><p>High-contrast colours meeting WCAG AA across all screens.</p></div>
+              <div class="card reveal" style="--d:.08s"><span class="card__k">Touch</span><h4>48px tap targets</h4><p>Generous spacing so slots are hard to mis-tap.</p></div>
+              <div class="card reveal"><span class="card__k">Language</span><h4>Plain words</h4><p>"Pick a time" instead of "Select appointment slot".</p></div>
+              <div class="card reveal" style="--d:.08s"><span class="card__k">Forgiveness</span><h4>Easy to change</h4><p>Every step has a clear back button; nothing is lost.</p></div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="outcome">
+            <span class="eyebrow reveal">Outcome</span>
+            <h2 class="reveal">What changed</h2>
+            <!-- EDIT: replace with your real results -->
+            <div class="grid-3">
+              <div class="card reveal"><div class="metric" data-count="3">0</div><p>steps from landing page to confirmed booking</p></div>
+              <div class="card reveal" style="--d:.08s"><div class="metric" data-count="2">0</div><p>languages supported from day one</p></div>
+              <div class="card reveal" style="--d:.16s"><div class="metric" data-count="0">0</div><p>accounts or passwords required</p></div>
+            </div>
+          </section>
+
+          <section class="cs-section" id="learnings">
+            <span class="eyebrow reveal">Learnings</span>
+            <h2 class="reveal">Working directly with a client</h2>
+            <ul class="bullets reveal">
+              <li>The first brief is rarely the real one — spending a day on-site was the best investment of the project.</li>
+              <li>Showing a clickable prototype got faster, clearer feedback than any static mockup.</li>
+              <li>Designing for the least confident user made the experience better for everyone.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <a href="kharcha.html" class="next-project container" data-cursor="Next">
+      <span class="eyebrow">Back to the first case study</span>
+      <h2>Kharcha →</h2>
+    </a>
+  </main>
+
+  <footer class="contact" id="contact" style="padding-top:clamp(56px,7vw,90px)">
+    <div class="container">
+      <div class="contact__row">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <a class="mail" href="mailto:shivampandey.ux@gmail.com">shivampandey.ux@gmail.com</a>
+          <button class="copy-btn" data-copy="shivampandey.ux@gmail.com">Copy</button>
+        </div>
+        <a href="../index.html" class="btn btn--light" data-magnetic>Back home <span class="arrow">→</span></a>
+      </div>
+      <div class="footer">
+        <span>© <span data-year>2026</span> Shivam Pandey</span>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance</a>
+          <a href="https://dribbble.com/" target="_blank" rel="noopener">Dribbble</a>
+        </div>
+        <div class="footer__right"><a href="#content" class="to-top">Back to top
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 11V1M1.5 5.5 6 1l4.5 4.5"/></svg></a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
