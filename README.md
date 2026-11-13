@@ -9,7 +9,10 @@ index.html                  Home: hero, 3 projects, about, experience, process, 
 case-studies/kharcha.html   01 · Personal case study (mobile app)
 case-studies/fleetdesk.html 02 · Internship (B2B dashboard)
 case-studies/aarogya.html   03 · Freelance (clinic booking website)
+prototypes/tpa-workspace.html  TPA Workspace admin dashboard (interactive prototype)
 assets/css/style.css        All styles (colours are variables at the top)
+assets/css/tpa-workspace.css  Styles for the TPA Workspace prototype
+assets/js/tpa-workspace.js  Sidebar, nav and greeting logic for the prototype
 assets/js/main.js           Animations & interactions
 assets/img/                 Images (favicon, your photo, project screens)
 ```
