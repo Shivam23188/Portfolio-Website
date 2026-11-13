@@ -79,7 +79,11 @@ h1, h2 { margin: 0; }
   border-right: 1px solid var(--tpa-line);
   transition: width 0.3s var(--tpa-ease), box-shadow 0.3s var(--tpa-ease);
   z-index: 20;
+  /* Still scrolls with wheel, touch and keyboard; the bar itself is hidden */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+.sidebar::-webkit-scrollbar { display: none; }
 
 .brand {
   display: flex;
