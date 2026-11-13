@@ -74,7 +74,8 @@ h1, h2 { margin: 0; }
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  padding: 20px 16px 16px;
+  /* Bottom keeps the empty room where the old hint card sat */
+  padding: 20px 16px 94px;
   background: var(--tpa-surface);
   border-right: 1px solid var(--tpa-line);
   transition: width 0.3s var(--tpa-ease), box-shadow 0.3s var(--tpa-ease);
